@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ES2022",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "outDir": "build/browser/runtime",
+    "rootDir": "packages",
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "types": []
+  },
+  "include": ["packages/runtime/src/**/*.ts", "packages/shared/src/**/*.ts"]
+}

@@ -1,0 +1,5 @@
+<manifest>
+  <assets>
+    <asset name="logo" mimeType="text/plain"/>
+  </assets>
+</manifest>

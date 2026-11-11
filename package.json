@@ -1,0 +1,30 @@
+{
+  "name": "as3js",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "ActionScript 3 to JavaScript compiler and Flash-compatible runtime",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/lexer/lexer.test.ts tests/parser/parser.test.ts tests/semantic/semantic.test.ts tests/backend/backend.test.ts tests/cli/cli.test.ts tests/corpus/corpus.test.ts",
+    "test:lexer": "node --test tests/lexer/lexer.test.ts",
+    "test:semantic": "node --test tests/semantic/semantic.test.ts",
+    "test:backend": "node --test tests/backend/backend.test.ts",
+    "test:cli": "node --test tests/cli/cli.test.ts",
+    "test:corpus": "node --test tests/corpus/corpus.test.ts",
+    "browser:build": "node tools/browser-smoke.ts",
+    "browser:serve": "node tools/serve-browser.ts",
+    "corpus:parse": "node packages/cli/src/main.ts parse-corpus /Users/laynester/Projects/habbo/HabboSwfOpenSource/src",
+    "corpus:analyze": "node packages/cli/src/main.ts analyze-corpus /Users/laynester/Projects/habbo/HabboSwfOpenSource/src",
+    "check": "npm run typecheck && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.28.2",
+    "terser": "^5.51.2",
+    "typescript": "^5.9.3"
+  }
+}

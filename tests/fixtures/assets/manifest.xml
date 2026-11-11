@@ -1,0 +1,4 @@
+<assets>
+  <asset name="logo" kind="bitmap"/>
+  <asset name="labels" kind="xml"/>
+</assets>

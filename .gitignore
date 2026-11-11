@@ -1,0 +1,8 @@
+.DS_Store
+AGENTS.md
+.freebuff
+ref
+build
+config
+node_modules
+docs
